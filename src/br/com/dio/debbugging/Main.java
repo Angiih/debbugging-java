@@ -1,0 +1,25 @@
+package br.com.dio.debbugging;
+
+public class Main {
+
+	  public static void main(String[] args) {
+		  System.out.println("Iniciou do programa método main.");
+          a();
+		  System.out.println("Finalizou do programa método main.");
+	  }
+	  
+	  static void a() {
+		  System.out.println("Entrou no método a.");
+		  b();
+		  System.out.println("Finalizou no método a.");
+	  }
+	  static void b() {
+		  System.out.println("Entrou no método b.");
+		  for(int i= 0; i <= 4; i++) 
+			  System.out.println(i);
+		  c();
+		  System.out.println("Finalizou no metodo b.");
+		  
+	  }
+	
+}
